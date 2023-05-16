@@ -1,7 +1,6 @@
 import { Form, message } from "antd";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ButtonLogin, Circle, FormLogin, InputCustom, LabelCustom, LoginWrapper, Title } from "./styles";
+import { ButtonLogin,  FormLogin, InputCustom, LabelCustom, LoginWrapper, Title } from "./styles";
 
 
 const LoginFormUser = () => {
@@ -28,13 +27,14 @@ const LoginFormUser = () => {
                 <Form.Item name="username" rules={[{required: true, message:"Tên người dùng là bắt buộc"}]}>
                     <InputCustom/>
                 </Form.Item>
-                <LabelCustom>Mật khẩu</LabelCustom>
+                <LabelCustom>Pasword</LabelCustom>
                 <Form.Item name="password" rules={[{required: true, message:"Mật khẩu là bắt buộc"}]}>
                     <InputCustom type="password"/>
                 </Form.Item>
-            </FormLogin>
+            </FormLogin> 
             <ButtonLogin onClick={onSubmit}>Log in</ButtonLogin>
         </LoginWrapper>
+        
         {/* <Circle pos="top"/>
         <Circle pos="bottom"/> */}
         </div>     

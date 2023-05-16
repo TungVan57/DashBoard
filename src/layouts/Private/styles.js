@@ -56,7 +56,6 @@ export const MenuItem = styled(NavLink)`
     background-color: rgba(17, 25, 40, 0.73);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
-
     display: flex;
     justify-content:start;
     align-items:center;
@@ -66,7 +65,7 @@ export const MenuItem = styled(NavLink)`
     width: 100%;
     margin: 0.5rem 0;
     padding: 0.8rem;
-    transition: 3s ease;
+    transition: 0.2s ease;
     overflow: hidden !important;
 
     svg{
@@ -74,31 +73,12 @@ export const MenuItem = styled(NavLink)`
     }
 
     &.active{
-      background: #e1eec3; 
-      background: -webkit-linear-gradient(
-        to right,
-        #f05053,
-        #e1eec3
-      ); 
-      background: linear-gradient(
-        to right,
-        #f05053,
-        #e1eec3
-      ); 
+      background:rgba(255, 255, 255, 0.1);
+      
     }
 
     :hover {
-      background: #e1eec3;
-      background: -webkit-linear-gradient(
-        to right,
-        #f05053,
-        #e1eec3
-      );
-      background: linear-gradient(
-        to right,
-        #f05053,
-        #e1eec3
-      );
+      background:rgba(255, 255, 255, 0.1);
     }
 `
 
@@ -108,17 +88,13 @@ export const Logo = styled.a`
   margin-bottom: 1.5rem !important;
   font-weight: bold;
   background: transparent !important;
-  border-radius: 0px  !important;
   text-align: center !important;
   justify-content:center !important;
   width: 100%;
   padding: 0.5rem;
   color: white;
-
-  background: #D38312 !important;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #A83279, #D38312) !important;  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #A83279, #D38312) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  border-bottom: 1px solid;
+  font-family: 'Space Grotesk', sans-serif;
   // -webkit-background-clip: text !important;
   // color: transparent !important;
   overflow: hidden !important;
@@ -154,7 +130,7 @@ export const Title = styled.div`
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #001f3f;
+  color: #fff;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -163,8 +139,8 @@ export const Title = styled.div`
 export const ToggleSidebarButton = styled(Button)`
   background-color:transparent;
   margin-right: 1rem;
-  border: 1px solid #001f3f;
-  color: #001f3f;
+  border: 1px solid #fff;
+  color: #fff;
 
   :hover{
     border: 1px solid pink !important;

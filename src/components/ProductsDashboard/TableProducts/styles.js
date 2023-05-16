@@ -119,13 +119,14 @@ export const ButtonAction = styled(Button)`
 `;
 
 export const ButtonCreate = styled(Button)`
-  background-color: #3D9970;
-  border: 2px solid #3D9970 !important;
+  background-color: #0652DD;
+  border: 2px solid #0652DD !important;
   font-weight: bold;
   color: white;
 
   :hover{
     background-color: white;
-    color: #2ECC40 !important;
+    color: #000 !important;
+    border:2px solid  #fff !important;
   }
 `

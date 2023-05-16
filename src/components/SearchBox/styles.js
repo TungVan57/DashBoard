@@ -9,7 +9,7 @@ export const SearchCustom = styled(Search)`
   
   input{
     background-color: rgba(17, 25, 40, 0.73);
-    color: pink;
+    color: white;
     border: 1px solid transparent;
     font-weight: bold;
   }
